@@ -191,8 +191,8 @@ renderChart()
 google.charts.setOnLoadCallback(drawChart);
 
 var options = {
-  width: 800,
-  height: 500,
+  width: '100%',
+  height: 'auto',
   timeline: { colorByRowLabel: true },
    colors: ['#e5f4ff', '#ffebcd', '#edbcbc', 'bfbfbf'],
    alternatingRowStyle: false,
@@ -205,7 +205,7 @@ var options = {
   },
 };
 function drawChart() {
-
+chartData=chartData2
   
   // let colorMap: { [key in AcademicCalendarEventTypeEnum]: string } = {
   //   // should contain a map of category -> color for every category
