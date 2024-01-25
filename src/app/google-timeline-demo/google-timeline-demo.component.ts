@@ -264,6 +264,93 @@ let chartData3 = [
   ]
 ]
 
+let chartData4 = [
+  [
+      "ACADEMIC EVENT",
+      "Term 1",
+      "2027-03-31T18:30:00.000Z",
+      "2027-06-30T18:30:00.000Z"
+  ],
+  [
+      "ACADEMIC EVENT",
+      "Term 2",
+      "2027-07-01T18:30:00.000Z",
+      "2027-09-29T18:30:00.000Z"
+  ],
+  [
+      "ACADEMIC EVENT",
+      "Term 3",
+      "2027-09-30T18:30:00.000Z",
+      "2027-12-29T18:30:00.000Z"
+  ],
+  [
+      "ACADEMIC EVENT",
+      "Term 4",
+      "2027-12-30T18:30:00.000Z",
+      "2028-03-29T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 1",
+      "2027-03-31T18:30:00.000Z",
+      "2027-04-19T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 2",
+      "2027-07-01T18:30:00.000Z",
+      "2027-07-19T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 3",
+      "2027-09-30T18:30:00.000Z",
+      "2027-10-18T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 4",
+      "2027-12-30T18:30:00.000Z",
+      "2028-01-17T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "Exam 1",
+      "2027-04-20T18:30:00.000Z",
+      "2027-05-09T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "Exam 2",
+      "2027-07-20T18:30:00.000Z",
+      "2027-08-08T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "exam 3.1",
+      "2027-10-19T18:30:00.000Z",
+      "2027-11-05T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "exam 3.2",
+      "2027-11-07T18:30:00.000Z",
+      "2027-11-29T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "exam 3.3",
+      "2027-12-01T18:30:00.000Z",
+      "2027-12-29T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "Exam 4",
+      "2028-01-18T18:30:00.000Z",
+      "2028-02-06T18:30:00.000Z"
+  ]
+]
+
 @Component({
   selector: 'app-google-timeline-demo',
   templateUrl: './google-timeline-demo.component.html',
@@ -375,6 +462,10 @@ change(){
 }
 change3(){
   chartData = chartData3;
+  this.renderChart();
+}
+change4(){
+  chartData = chartData4;
   this.renderChart();
 }
 }
