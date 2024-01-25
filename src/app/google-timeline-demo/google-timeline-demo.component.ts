@@ -171,6 +171,98 @@ let chartData = [
       "2028-03-29T18:30:00.000Z"
   ]
 ]
+let chartData3 = [
+  [
+      "ACADEMIC EVENT",
+      "Term 1",
+      "2027-03-31T18:30:00.000Z",
+      "2027-06-30T18:30:00.000Z"
+  ],
+  [
+      "ACADEMIC EVENT",
+      "Term 2",
+      "2027-07-01T18:30:00.000Z",
+      "2027-09-29T18:30:00.000Z"
+  ],
+  [
+      "ACADEMIC EVENT",
+      "Term 3",
+      "2027-09-30T18:30:00.000Z",
+      "2027-12-29T18:30:00.000Z"
+  ],
+  [
+      "ACADEMIC EVENT",
+      "Term 4",
+      "2027-12-30T18:30:00.000Z",
+      "2028-03-29T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 1",
+      "2027-03-31T18:30:00.000Z",
+      "2027-06-30T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 2",
+      "2027-07-01T18:30:00.000Z",
+      "2027-07-19T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 3",
+      "2027-09-30T18:30:00.000Z",
+      "2027-10-18T18:30:00.000Z"
+  ],
+  [
+      "VACATIONS EVENT",
+      "Vacation 4",
+      "2027-12-30T18:30:00.000Z",
+      "2028-01-17T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "Exam 2",
+      "2027-07-20T18:30:00.000Z",
+      "2027-09-29T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "Exam 3",
+      "2027-10-19T18:30:00.000Z",
+      "2027-12-22T18:30:00.000Z"
+  ],
+  [
+      "EXAMS EVENT",
+      "Exam 4",
+      "2028-01-18T18:30:00.000Z",
+      "2028-02-06T18:30:00.000Z"
+  ],
+  [
+      "OTHER EVENT",
+      "testing",
+      "2028-02-07T18:30:00.000Z",
+      "2028-03-03T18:30:00.000Z"
+  ],
+  [
+      "OTHER EVENT",
+      "caro can eve",
+      "2028-02-08T18:30:00.000Z",
+      "2028-03-12T18:30:00.000Z"
+  ],
+  [
+      "OTHER EVENT",
+      "annual days",
+      "2028-03-04T18:30:00.000Z",
+      "2028-03-29T18:30:00.000Z"
+  ],
+  [
+      "OTHER EVENT",
+      "extra ",
+      "2028-03-26T18:30:00.000Z",
+      "2028-03-29T18:30:00.000Z"
+  ]
+]
 
 @Component({
   selector: 'app-google-timeline-demo',
@@ -279,6 +371,10 @@ function drawChart() {
 
 change(){
   chartData = chartData2;
+  this.renderChart();
+}
+change3(){
+  chartData = chartData3;
   this.renderChart();
 }
 }
