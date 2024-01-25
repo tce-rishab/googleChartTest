@@ -1,0 +1,8 @@
+
+::ng-deep path{
+    display: none;
+}
+::ng-deep rect{
+    stroke-width: 1px;
+    stroke: #e6e6e6;
+}
