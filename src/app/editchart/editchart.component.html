@@ -1,0 +1,59 @@
+<div class="formContainer">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <!-- <div>Adding Block</div>
+    <div>close</div> -->
+    
+    <table>
+        <tr>
+            <td colspan="4"> Select Type</td>
+          
+        </tr>
+        <tr class="padding">
+            <td *ngFor="let types of typesOfBlock">
+                <button  type="button"  [ngClass]="academicType===types ? 'active' : ''" class="types-details"
+                    (click)="clickToSelectTypes(types)">{{types}}
+                </button>
+            </td>
+           
+        </tr>
+        <tr>
+        <td>Name your type</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="padding">
+        <td  colspan="4"><input  class="textBoxClass"
+            type="text"
+            placeholder=""
+            formControlName="typeName"></td>
+           
+        </tr>
+        <tr>
+        <td  colspan="4">Select term<td>
+          
+        </tr>
+     <tr class="padding">
+       <td *ngFor="let term of termsList" > 
+           <button  type="button"  [ngClass]="academicTerm===term ? 'active' : ''"  class="types-details"
+        (click)="clickToSelectTerm(term)">{{term}}</button>
+   
+           
+     </tr>
+       <tr>
+        <td>from:</td>
+        <td>To:</td>
+       
+       </tr>
+       <tr class="padding">
+        <td><input class="dateClass" formControlName="startDate" type="date" min="{{termMinDate}}" max="{{termMaxDate}}" (change)="setStartDate($event)"></td>
+        <td  colspan="2"><input class="dateClass" formControlName="endDate" type="date" min="{{endMinDate}}" max="{{termMaxDate}}" (change)="setEndDate($event)" id="myEndDate"></td>
+       
+       </tr>
+       
+    </table>
+    <button type="submit" class="formBtn" [disabled]="!form.valid">Submit</button>
+   
+</form>
+<div class="closeBtn" (click)="closeForm()">+</div>
+</div>

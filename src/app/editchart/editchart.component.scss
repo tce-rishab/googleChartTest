@@ -1,0 +1,86 @@
+
+.formContainer{
+    position: relative;
+    width: auto;
+    border-radius: 10px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    color: gray;
+    font-size: 14px;
+    box-shadow: 0px 0px 50px #0000006b;
+}
+.padding td {
+    padding-bottom: 20px;
+  }
+button{
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+.dateClass{
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+    width: 132px;
+    background: #f2e7ae;
+    border-radius: 6px;
+}
+.types-details{
+    width: 150px;
+    margin-right: 10px;
+    height: 34px;
+    display: inline-block;
+    
+}
+.types-details.active{
+    background-color:#f0f9e8;
+    color:black;
+    border: 1px solid #baf08b;
+    
+}
+.textBoxClass{
+    border: none;
+    border-radius: 6px;
+    padding: 5px 5px 5px 10px;
+    background: #eeeeee;
+    height: 22px;
+    width: 100%;
+    
+}
+.formBtn{
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #69e;
+    color: #fff;
+    padding: 13px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    height: 33px;
+    line-height: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+   
+  }
+  .closeBtn{
+    background: black;
+    position: absolute;
+    top: 10px;
+    font-size: 27px;
+    color: white;
+    font-weight: bolder;
+    /* padding: 6px; */
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 24px;
+    transform: rotate(45deg);
+    height: 24px;
+    right: 10px;
+    cursor: pointer;
+  }

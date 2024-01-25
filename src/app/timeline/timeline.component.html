@@ -1,0 +1,26 @@
+<div class="mainContainer">
+    <div class="btnContainer">
+       <button class="formBtn" (click)="addEntry()"> + Add New Entry</button>
+    </div>
+ 
+ <div class="AYContainer"> AY-2022-2023</div>
+ <div #mychartContainer id="charView">
+ <!-- <google-chart *ngIf="isChart && myData" #chart  
+    [title]="title"  
+    [type]="type"  
+    [data]="myData"  
+    [options]="options"  
+    [width]="width"  
+    [height]="height"
+    [columns]="colNames"
+    (select)="onSelectRowData($event)"
+    (ready)="setChart()">  
+ </google-chart>  -->
+ </div>
+ 
+ <div *ngIf="openEditForm" class="blocker"></div>
+ <div *ngIf="openEditForm"class="formContainer">
+ <app-editchart></app-editchart>
+ </div>
+ 
+ </div>
