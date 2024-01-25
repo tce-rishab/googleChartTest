@@ -192,7 +192,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 var options = {
   width: '100%',
-  height: 'auto',
+  height: '',
   timeline: { colorByRowLabel: true },
    colors: ['#e5f4ff', '#ffebcd', '#edbcbc', 'bfbfbf'],
    alternatingRowStyle: false,
